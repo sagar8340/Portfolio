@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    display: flex;
+    background-color: #e911bc52;
+    height: 60px;
+    width: 100%;
+    font-family: sans-serif;
+    font-weight: 700;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul {
+    display: flex;
+    width: 57%;
+    height: 60px;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul li a:hover {
+    color: rgb(55, 40, 215);
+}
+
+.hero_sec {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+    font-family: sans-serif;
+}
+
+.logo {
+    margin-left: 15px;
+    font-size: larger;
+    color: white;
+}
+
+.right_sec {
+    height: 249px;
+    width: 40%;
+}
+
+.right_sec img {
+    object-fit: cover;
+    height: 309px;
+    max-width: 91%;
+    border-radius: 10px;
+}
+
+.left_sec {
+    height: 259px;
+    width: 35vw;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.left_sec :nth-child(2) {
+    font-size: 2.8rem;
+}
+
+#intro {
+    font-size: x-large;
+    margin-top: 5px;
+    font-family: sans-serif;
+}
+
+.left_sec a {
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#about {
+    font-size: 1.2em;
+    font-family: sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 250px;
+
+}
+
+.skill {
+    margin-top: 30px;
+}
+
+.info {
+    width: 40vw;
+    margin-right: 85px;
+    color: white;
+}
+
+.info h2 {
+    color: rgb(164, 101, 37);
+}
+
+#project_sec {
+    font-family: 'Segoe UI';
+    margin-top: 115px;
+    margin-left: 75px;
+}
+
+#project_sec h2 {
+    color: rgb(164, 101, 37);
+    font-size: 1.6em;
+    font-family: 'Segoe UI';
+}
+
+.project h3 {
+    color: black;
+    font-size: 1.2em;
+    font-family: 'Segoe UI';
+}
+
+.project {
+    font-family: 'Segoe UI';
+    font-size: 1.2em;
+    font-weight: 500;
+    color: white;
+}
+
+.projects {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.projects p {
+    color: antiquewhite;
+}
+
+.line {
+    height: 1px;
+    border: 1px solid white;
+    margin-top: 115px;
+    opacity: 0.6;
+}
+
+#contact {
+    text-align: center;
+    margin-top: 40px;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 100px;
+    color: aqua;
+
+}
+
+.form_sec {
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+    height: 45px;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+
+#contact h3 {
+    color: rgb(16 255 50);
+}
+
+.form_sec input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    margin-top: 20px;
+    height: 80px;
+    width: 250px;
+}
+
+#form {
+    margin-top: 10px;
+}
+
+label {
+    color: aliceblue;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+.footer {
+    height: 200px;
+    background-color: rgb(39, 18, 18);
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+@media only screen and (max-width:855px) {
+    .left_sec :nth-child(2) {
+        font-size: 0.9em;
+    }
+
+    .left_sec :first-child {
+        font-size: 0.7em;
+    }
+
+    .left_sec :nth-child(3) {
+        font-size: 0.7em;
+    }
+
+    #intro {
+        font-size: 0.5em;
+    }
+
+    .right_sec {
+        height: 168px;
+    }
+
+    .right_sec img {
+        height: 202px;
+    }
+
+    #about {
+        font-size: 1em;
+    }
+
+    .left_sec {
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width:624px) {
+    .hero_sec {
+        flex-direction: column;
+    }
+
+    .left_sec {
+        height: 366px;
+        width: 80vw;
+    }
+
+    .right_sec {
+        height: 231px;
+        width: 64%;
+    }
+
+    .right_sec img {
+        height: 224px;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width:390px) {
+    .nav {
+        flex-direction: column;
+        padding: 8px;
+        height: 184px;
+        width: 43%;
+        background-color: #79e5e79c;
+
+    }
+
+    .nav ul {
+        flex-direction: column;
+        width: 56%;
+        height: 132px;
+    }
+
+    header {
+        display: flex;
+        justify-content: center;
+        height: 100px;
+    }
+
+    ul li {
+        margin-top: 14px;
+    }
+
+    #about {
+        margin-right: 30px;
+        margin-top: 152px;
+    }
+
+    .info {
+        text-align: center;
+    }
+
+    .info p {
+        text-align: center;
+    }
+
+    #project_sec {
+        margin-left: 32px;
+        padding: 5px;
+    }
+
+    #contact {
+        text-align: center;
+        padding: 8px;
+        font-size: 1em;
+    }
+
+    .form_sec input {
+        width: 253px;
+    }
+
+    .line {
+        margin-top: 88px;
+    }
+
+    .footer {
+        margin-top: 77px;
+        width: 374px;
+        text-align: center;
+    }
+}
