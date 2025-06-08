@@ -78,7 +78,7 @@ ul li a:hover {
     width: 35vw;
     font-size: 2.5rem;
     font-weight: 700;
-    color: whitesmoke;
+    color: #320070db;
     text-align: center;
 }
 
@@ -104,7 +104,6 @@ ul li a:hover {
     display: flex;
     justify-content: flex-end;
     margin-top: 250px;
-
 }
 
 .skill {
@@ -112,13 +111,13 @@ ul li a:hover {
 }
 
 .info {
-    width: 40vw;
     margin-right: 85px;
-    color: white;
+    color: #320070db;
+    width: 42vw;
 }
 
 .info h2 {
-    color: rgb(164, 101, 37);
+    color: #b24f98f7;
 }
 
 #project_sec {
@@ -128,7 +127,7 @@ ul li a:hover {
 }
 
 #project_sec h2 {
-    color: rgb(164, 101, 37);
+    color: #103bd8e0;
     font-size: 1.6em;
     font-family: 'Segoe UI';
 }
@@ -143,7 +142,7 @@ ul li a:hover {
     font-family: 'Segoe UI';
     font-size: 1.2em;
     font-weight: 500;
-    color: white;
+    color: #320070db;
 }
 
 .projects {
@@ -152,7 +151,7 @@ ul li a:hover {
 }
 
 .projects p {
-    color: antiquewhite;
+    color: #320070db;
 }
 
 .line {
@@ -281,7 +280,7 @@ footer {
     }
 }
 
-@media only screen and (max-width:390px) {
+@media only screen and (max-width:400px) {
     .nav {
         flex-direction: column;
         padding: 8px;
@@ -291,10 +290,18 @@ footer {
 
     }
 
+    .hero_sec {
+        margin-left: 15px;
+    }
+
     .nav ul {
         flex-direction: column;
         width: 56%;
         height: 132px;
+    }
+
+    .nav {
+        margin-left: 13px;
     }
 
     header {
@@ -308,12 +315,20 @@ footer {
     }
 
     #about {
-        margin-right: 30px;
-        margin-top: 152px;
+        margin-top: 96px;
+        margin-left: 70px;
+        width: 325px;
+    }
+
+    #about h2 {
+        margin: 10px;
     }
 
     .info {
         text-align: center;
+        height: 184px;
+        width: 265px;
+
     }
 
     .info p {
@@ -321,14 +336,16 @@ footer {
     }
 
     #project_sec {
-        margin-left: 32px;
+        margin-left: 70px;
         padding: 5px;
+        margin-top: 216px;
     }
 
     #contact {
         text-align: center;
         padding: 8px;
         font-size: 1em;
+        margin-left: 40px;
     }
 
     .form_sec input {
@@ -337,11 +354,25 @@ footer {
 
     .line {
         margin-top: 88px;
+        margin-left: 60px;
     }
 
     .footer {
         margin-top: 77px;
-        width: 374px;
+        width: 396px;
         text-align: center;
+    }
+}
+
+@media only screen and (min-width:350px) {
+    .line {
+        margin-left: 15px;
+    }
+
+    #contact {
+        margin-left: 32px;
+    }
+    #project_sec{
+        width: 270px;
     }
 }
